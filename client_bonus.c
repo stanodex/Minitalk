@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hceviz <hceviz@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hceviz <hceviz@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 15:54:50 by hceviz            #+#    #+#             */
-/*   Updated: 2025/02/01 14:02:20 by hceviz           ###   ########.fr       */
+/*   Updated: 2025/02/02 22:09:03 by hceviz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	send_chr(int pid, char chr)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep(60);
+		usleep(50);
 	}
 }
 
@@ -66,7 +66,7 @@ void	handler(int signal, siginfo_t *info, void *ucontext)
 	(void)info;
 	(void)ucontext;
 	if (SIGUSR2 == signal)
-		ft_printf("Message received by server🚀🔥\n");
+		ft_printf("Message is received by server🚀🔥\n");
 	exit(EXIT_SUCCESS);
 }
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   server_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hceviz <hceviz@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hceviz <hceviz@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 16:12:34 by hceviz            #+#    #+#             */
-/*   Updated: 2025/02/01 14:05:11 by hceviz           ###   ########.fr       */
+/*   Updated: 2025/02/02 21:49:38 by hceviz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	handler(int signal, siginfo_t *info, void *ucontext)
 		{
 			write(1, "\n", 1);
 			chr = 0;
-			kill(info->si_pid, 12);
+			kill(info->si_pid, SIGUSR2);
 			usleep(50);
 			return ;
 		}

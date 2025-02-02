@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: hceviz <hceviz@student.42warsaw.pl>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/02/02 21:49:30 by hceviz            #+#    #+#              #
+#    Updated: 2025/02/02 21:49:33 by hceviz           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = ""
 NAMES = server
 NAMEC = client
@@ -31,7 +43,7 @@ $(NAMECB) : $(FT_PRINTF)
 
 all : $(FT_PRINTF) $(NAMES) $(NAMEC)
 
-bonus : $(FT_PRINTF) $(NAMESB) $(NAMECB)
+bonus : $(FT_PRINTF) $(NAME) $(NAMES) $(NAMESB) $(NAMECB)
 
 clean :
 	make clean -C $(FT_PRINTF_DIR)

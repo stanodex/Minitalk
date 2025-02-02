@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hceviz <hceviz@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hceviz <hceviz@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 12:33:30 by hceviz            #+#    #+#             */
-/*   Updated: 2025/02/01 14:05:43 by hceviz           ###   ########.fr       */
+/*   Updated: 2025/02/02 22:07:39 by hceviz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
+//be careful with arguments quotation marks
 void	handler(int signal, siginfo_t *info, void *ucontext)
 {
 	static int	bitcount;

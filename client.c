@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   client.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hceviz <hceviz@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hceviz <hceviz@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 12:16:51 by hceviz            #+#    #+#             */
-/*   Updated: 2025/02/01 14:04:53 by hceviz           ###   ########.fr       */
+/*   Updated: 2025/02/02 22:00:31 by hceviz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,9 @@ int	main(int ac, char **av)
 {
 	int	pid;
 
+	pid = ft_atoi(av[1]);
 	if (ac == 3)
 	{
-		pid = ft_atoi(av[1]);
 		send_str(pid, av[2]);
 		send_chr(pid, '\0');
 	}
